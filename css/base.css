@@ -244,7 +244,7 @@ body{
 
 .concern-group-post-nav{
     margin-top: 87px;
-    text-align: left;
+    text-align: center;
 }
 
 .post-nav-unit{
@@ -264,6 +264,224 @@ body{
 }
 
 
+.my-group-unit{
+    margin-top: 27px;
+}
+
+.my-group-unit-head{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.my-group-unit-head a:first-child{
+    color: #67a1a7;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 120px;
+}
+
+.my-group-unit-head a:last-child{
+    color: #000;
+    font-size: 16px;
+}
+
+.my-group-unit-body{
+    margin-top: 10px;
+    text-align: left;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.my-group-unit-body img{
+    width: 71px;
+    height: 71px;
+    margin-right: 8px;
+}
+
+.my-group-unit-body img:nth-child(3n){
+    margin-right: 0;
+}
+
+.hot-post-nav{
+    margin-top: 27px;
+}
+
+.hot-post-nav-title{
+    text-align: left;
+    margin-bottom: 17px;
+}
+
+.hot-post-nav-title a{
+    color: #67a1a7;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 120px;
+}
+
+.hot-post-nav-list-content{
+    text-align: left;
+}
+
+.hot-post-nav-list-content li{
+    display: block;
+}
+
+.hot-post-nav-list-content li:nth-child(2n - 1){
+    background-color: #eef7ff;
+}
+
+.hot-post-nav-list-content-list-item-group{
+    padding-top: 9px;
+    padding-left: 4px;
+    padding-bottom: 9px;
+}
+
+
+.hot-post-nav-list-content-list-item-group>a{
+    font-size: 13px;
+}
+
+.hot-post-nav-list-content-list-item-group-order{
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background-color: #66cccc;
+    text-align: center;
+}
+
+.hot-post-nav-list-content-list-item-group:nth-child(1) .hot-post-nav-list-content-list-item-group-order{
+    background-color: #e33d2f;
+}
+
+.hot-post-nav-list-content-list-item-group:nth-child(2) .hot-post-nav-list-content-list-item-group-order{
+    background-color: #ffb017;
+}
+
+.hot-post-nav-list-content-list-item-group:nth-child(3) .hot-post-nav-list-content-list-item-group-order{
+    background-color: #ffe114;
+}
+
+.hot-post-nav-list-content-list-item-group:nth-child(1)>a{
+    color: #7dbfe0;
+    text-decoration: underline;
+}
+
+.hot-post-nav-list-content-list-item-group-order a{
+    display: block;
+    line-height: 17px;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.bbs-banner{
+    margin-top: 27px;
+}
+
+.bbs-banner img{
+    width: 242px;
+    height: 157px;
+}
+
+.guess-you-like{
+    margin-top: 27px;
+}
+
+.guess-you-like-head{
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.guess-you-like-head a{
+    color: #67a1a7;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 120px;
+}
+
+.guess-you-like-body{
+    text-align: left;
+}
+
+.guess-you-like-body-item-group{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 4px;
+}
+
+.guess-you-like-body-item-group:nth-child(2n - 1){
+    background-color: #eef7ff;
+}
+
+.guess-you-like-body-item-group-img{
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 2px;
+    vertical-align: top;
+}
+
+.guess-you-like-body-item-group-img img{
+    width: 72px;
+    height: 72px;
+}
+
+.guess-you-like-body-item-group-text{
+    display: inline-block;
+    width: 151px;
+}
+
+.guess-you-like-body-item-group-text-title{
+    padding-top: 5px;
+}
+
+.guess-you-like-body-item-group-text-title a{
+    font-size: 18px;
+}
+
+.guess-you-like-body-item-group-text-content{
+    margin-top: 5px;
+    max-height: 39px;
+    overflow: hidden;
+}
+
+.guess-you-like-body-item-group-text-content p{
+    font-size: 13px;
+    word-wrap: break-word;
+}
+
+
+.main-footer{
+    background-color: #414141;
+    margin-top: 109px;
+    height: 60px;
+    width: 100%;
+
+    overflow: hidden;
+
+    padding-left: 45px;
+}
+
+.footer-block{
+    display: inline-block;
+    margin-right: 130px;
+}
+
+.footer-block a{
+    color: #fff;
+    line-height: 60px;
+    font-size: 18px;
+    margin-right: 100px;
+}
+
+.footer-block:last-child{
+    margin-right: 0;
+}
+
+.footer-block:last-child a{
+    margin-right: 0;
+}
+
 
 .underscore{
     text-decoration: underline !important;
@@ -279,4 +497,8 @@ body{
 
 .grey{
     color: #979797 !important;
+}
+
+.grey-green{
+    color: #67a1a7;
 }
