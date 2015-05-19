@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/underscore-min.js"></script>
+    <script type="text/javascript" src="js/backbone-min.js"></script>
+    <script type="text/javascript" src="js/backbone.sync.js"></script>
+    <script type="text/javascript" src="js/backbone.two-way-bind.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+
+    var m = Backbone.Model.extend({
+
+        defaults : {
+            "text" : ""
+        }
+
+    });
+
+    var c = Backbone.Collection.extend({
+        model : m
+    });
+
+    var test = new c;
+
+    var v = Backbone.View.extend({
+
+        el : "body",
+
+        dom : {},
+
+        view_elements : {
+        },
+
+        create_view : function(){
+            this.dom = this.$el.append("<input data_bind='text' data_type='input'>");
+        },
+
+        initialize : function(){
+            this.create_view();
+            this.view_elements["text"] = $(this.dom).find("input");
+        }
+
+    });
+
+    var vc = Backbone.View.extend({
+
+        view_elements : [],
+
+        create_view : function(){
+            var k = new v();
+            this.view_elements.push(k);
+            return k;
+        },
+
+        initialize : function(){
+            this.two_way_bind(test);
+        }
+
+    });
+
+    var view = new vc;
+
+    test.add([{"text":"123"}]);
+
+</script>
+</html>
