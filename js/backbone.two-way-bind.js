@@ -16,7 +16,10 @@ _.extend($.prototype, {
     if(this["data_type"] == "input"){
       return this.val();
     }
-    else{
+    else if(this["data_type"] == "img"){
+      return this.attr("src");
+    }
+    else {
       return this.html();
     }
   },
@@ -24,6 +27,9 @@ _.extend($.prototype, {
   set_val : function(val){
     if(this["data_type"] == "input"){
       this.val(val);
+    }
+    else if(this["data_type"] == "img"){
+      this.attr("src", val);
     }
     else{
       this.html(val);
